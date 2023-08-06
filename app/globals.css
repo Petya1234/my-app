@@ -33,6 +33,8 @@ h1 {
 .container {
   min-height: 93%;
   background-color: rgb(100, 182, 236);
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 @media (prefers-color-scheme: dark) {

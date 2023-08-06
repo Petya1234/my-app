@@ -1,7 +1,7 @@
 import Link from "next/link";
 import '@/app/contacts/styles.css'
 
-export default function  ({
+export default function contactsLayout ({
     children,
 }:{
     children: React.ReactNode;

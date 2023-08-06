@@ -15,11 +15,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      
       <body>
+        <header>
         <Header />
+        </header>
         <main className="container" >{children}</main>
-        <Footer />
+        <footer><Footer /></footer>
       </body>
+      
     </html>
   );
 }
