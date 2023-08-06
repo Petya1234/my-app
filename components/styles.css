@@ -1,0 +1,28 @@
+.header {
+    height: 40px;
+    text-align: center;
+    background-color: black;
+}
+
+
+.header > a {
+    padding-top: 15px;
+    font-size: 20px;
+    margin: 10px;
+    color: inherit;
+    text-decoration: none;
+}
+
+ 
+.header > a:hover {
+    color: #5edaf0; /* Цвет ссылки при наведении на нее курсора мыши */  
+    text-decoration: underline; /* Добавляем подчеркивание */
+}
+
+
+.footer {
+    height: 50px;
+    margin-top: -50px;
+    background-color: black;
+}
+

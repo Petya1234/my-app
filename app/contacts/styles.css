@@ -1,0 +1,19 @@
+.cont-link {
+    align-items: center;
+    padding: auto;
+}
+
+li {
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+      
