@@ -6,3 +6,10 @@
     top: 200px;
     left: 150px;
 }
+
+.main-text-content {
+    position: relative;
+    width: 1000px;
+    left: 35%;
+    top: 300px;
+}

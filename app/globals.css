@@ -23,7 +23,7 @@ html {
 }
 
 body {
-  margin: 0;
+  margin: auto;
   /* Растягиваем body по высоте html */
   min-height: 100%;
   display: grid;
@@ -48,6 +48,8 @@ h1 {
     color-scheme: dark;
   }
 }
+
+
 
 @keyframes gradient {
 	0% {
