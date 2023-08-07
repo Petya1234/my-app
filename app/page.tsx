@@ -6,9 +6,11 @@ import { EmblaCarousel } from "@/components/EmblaCarousel";
 
 
 function handleClick() {
-  console.log('button clicked')
+  window.scrollTo({
+    top: 2000,  // это координат где должен быть экран
+    behavior: 'smooth'  //Это анимация
+})
 }
-
 export default function Home() {
   return (
       
