@@ -29,6 +29,33 @@ body {
   display: grid;
   grid-template-rows: auto 1fr auto;
 }
+.header {
+  height: 70px;
+  text-align: center;
+  background-color: black;
+}
+
+
+.header > a {
+  margin: 10px;
+  font-size: 50px;
+  color: inherit;
+  text-decoration: none;
+}
+
+
+.header > a:hover {
+  color: #5edaf0; /* Цвет ссылки при наведении на нее курсора мыши */  
+  text-decoration: underline; /* Добавляем подчеркивание */
+}
+
+
+.footer {
+  margin-top: 1px;
+  height: 50px;
+  background-color: black;
+  padding-top: 10px;
+}
 
 .container {
   background: linear-gradient(90deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
@@ -36,6 +63,7 @@ body {
 	animation: gradient 10s ease infinite;
 	transform: translate3d(0, 0, 0);
   height: 5000px;
+  width: 100%;
 
 }
 
