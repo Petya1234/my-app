@@ -2,7 +2,7 @@
 .embla {
     overflow: hidden;
     position: relative;
-    top: 3000px;
+    top: 2800px;
   }
   .embla__container {
     display: flex;
@@ -10,4 +10,9 @@
   .embla__slide {
     flex: 0 0 100%;
     min-width: 0;
+  }
+  .embla__slide >p{
+    font-size: 30px;
+    font-weight: 800;
+    color:black;
   }

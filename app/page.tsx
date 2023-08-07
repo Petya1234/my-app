@@ -7,7 +7,14 @@ import { EmblaCarousel } from "@/components/EmblaCarousel";
 
 function handleClick() {
   window.scrollTo({
-    top: 2000,  // это координат где должен быть экран
+    top: 1500,  // это координат где должен быть экран
+    behavior: 'smooth'  //Это анимация
+})
+}
+
+function handleClick2() {
+  window.scrollTo({
+    top: 2950,  // это координат где должен быть экран
     behavior: 'smooth'  //Это анимация
 })
 }
@@ -22,6 +29,7 @@ export default function Home() {
         </h1>
         <button className="button" onClick={handleClick}>Подробности</button>
         <EmblaCarousel/>
+        <button className="button2" onClick={handleClick2}>К фото</button>
       </div>
   );
 }

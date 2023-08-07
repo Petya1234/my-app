@@ -12,27 +12,47 @@
 }
 
 .main-text-content > h1 {
-  position:absolute;
+  position: absolute;
   left: 1000px;
-  top:300px;
-
+  top: 300px;
 }
 
 .button {
-    position: absolute;
-    top: 500px;
-    left: 1200px;
+  position: absolute;
+  font-weight: 800;
+  top: 500px;
+  left: 1200px;
   text-decoration: none;
   display: inline-block;
-  color: white;
+  color: rgb(0, 0, 0);
   padding: 20px 30px;
   border-radius: 10px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
-  background-image: linear-gradient(270deg, #4df3eb, #cc2828, #abe1f5, #4df3eb);
+  background-image: linear-gradient(270deg, #4df3eb, #cc2828, #49c4f1, #4df3eb);
   background-size: 200% auto;
   transition: 0.5s;
   animation: gradient 5s ease infinite;
-	transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.button2 {
+  position: absolute;
+  top: 2300px;
+  left: 900px;
+  font-weight: 800;
+  text-decoration: none;
+  display: inline-block;
+  color: rgb(0, 0, 0);
+  padding: 20px 30px;
+  border-radius: 10px;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-image: linear-gradient(270deg, #1f45c0, #a54feb, #c11fe9, #1129b3);
+  background-size: 200% auto;
+  transition: 0.5s;
+  animation: gradient 5s ease infinite;
+  transform: translate3d(0, 0, 0);
 }
