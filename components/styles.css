@@ -26,3 +26,15 @@
     padding-top: 10px;
 }
 
+.embla {
+    overflow: hidden;
+    position: relative;
+    top: 3000px;
+  }
+  .embla__container {
+    display: flex;
+  }
+  .embla__slide {
+    flex: 0 0 100%;
+    min-width: 0;
+  }
