@@ -13,13 +13,13 @@ export const EmblaCarousel = () => {
   return (
     <div className="embla" ref={emblaRef}>
       <div className="embla__container">
-        <div className="embla__slide"><Image height={1000} width={1500} src={imgCarousel1} alt=''></Image>
+        <div className="embla__slide"><Image height={1000} width={1000} src={imgCarousel1} alt=''></Image>
         <p>Мои новые кроссики</p></div>
-        <div className="embla__slide"><Image height={1000} width={1500} src={imgCarousel2} alt=''></Image>
+        <div className="embla__slide"><Image height={1000} width={1000} src={imgCarousel2} alt=''></Image>
         <p>Лагерь</p></div>
-        <div className="embla__slide"><Image height={1000} width={1500} src={imgCarousel3} alt=''></Image>
+        <div className="embla__slide"><Image height={1000} width={1000} src={imgCarousel3} alt=''></Image>
         <p>Любимый зал</p></div>
-        <div className="embla__slide"><Image height={1000} width={1500} src={imgCarousel4} alt=''></Image>
+        <div className="embla__slide"><Image height={1000} width={1000} src={imgCarousel4} alt=''></Image>
         <p>Кошка???</p></div>
       </div>
     </div>
