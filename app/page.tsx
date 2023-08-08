@@ -28,8 +28,14 @@ export default function Home() {
           Здесь вы сможете узнать немного его биографии
         </h1>
         <button className="button" onClick={handleClick}>Подробности</button>
-        <EmblaCarousel/>
+        <div className="main-info">
+          Вы знаете как меня зовут, но если бы этого было достаточно этот сайт не был бы создан. <br />
+      
+          Перейду сразу к делу, на этом сайте вы можете связаться со мной, подписаться на мои соцсети, посмотреть фоточки и может что-нибудь ещё, если я придумаю что-то. <br />
+          А пока предлагаю вам посмотреть небольшую подборку фоточек
+        </div>
         <button className="button2" onClick={handleClick2}>К фото</button>
+        <EmblaCarousel/>
       </div>
   );
 }

@@ -30,17 +30,26 @@
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
-  background-image: linear-gradient(270deg, #4df3eb, #cc2828, #49c4f1, #4df3eb);
+  background-image: linear-gradient(270deg, #f8fafa, #979797);
   background-size: 200% auto;
   transition: 0.5s;
+  border: none;
   animation: gradient 5s ease infinite;
   transform: translate3d(0, 0, 0);
+}
+
+.main-info {
+  position: absolute;
+  width: 1400px;
+  top: 1700px;
+  font-size: 60px;
 }
 
 .button2 {
   position: absolute;
   top: 2300px;
-  left: 900px;
+  left: 800px;
+  border: none;
   font-weight: 800;
   text-decoration: none;
   display: inline-block;
@@ -50,7 +59,7 @@
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
-  background-image: linear-gradient(270deg, #1f45c0, #a54feb, #c11fe9, #1129b3);
+  background-image: linear-gradient(270deg, #f8fafa, #979797);
   background-size: 200% auto;
   transition: 0.5s;
   animation: gradient 5s ease infinite;
