@@ -58,9 +58,9 @@ body {
 }
 
 .container {
-  background: linear-gradient(90deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background: linear-gradient(90deg, #9b9898, #1f191b, #979a9b, #949c9a);
 	background-size: 400% 400%;
-	animation: gradient 10s ease infinite;
+	animation: gradient 20s ease infinite;
 	transform: translate3d(0, 0, 0);
   height: 4000px;
   width: 100%;
