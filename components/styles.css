@@ -30,7 +30,7 @@
   text-decoration: none;
   float: right;
 }
-.facts-link >a:hover {
+.facts-link:hover {
   color: #e0f5f5; 
   text-decoration: underline; 
 }
