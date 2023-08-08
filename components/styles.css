@@ -3,8 +3,7 @@
   overflow: hidden;
   position: relative;
   top: 2800px;
-  margin-left: auto;
-  margin-right: auto;
+  left: 460px;
 }
 .embla__container {
   display: flex;

@@ -1,6 +1,6 @@
 
-export default function Blog() {
+export default function Facts() {
   return (
-    <h1>Hello</h1>
+    <div className="main-facts-content"></div>
   )
 }
