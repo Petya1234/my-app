@@ -1,9 +1,11 @@
 
 .embla {
-  width: 900px;
+  width: 1200px;
     overflow: hidden;
     position: relative;
     top: 2800px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .embla__container {
     display: flex;

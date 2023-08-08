@@ -5,7 +5,7 @@ import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 
 export const metadata: Metadata = {
-  title: "New next app"
+  title: 'Petya main'
 };
 
 export default function RootLayout({
