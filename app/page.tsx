@@ -7,15 +7,15 @@ import { EmblaCarousel } from "@/components/EmblaCarousel";
 
 function handleClick() {
   window.scrollTo({
-    top: 1500,  // это координат где должен быть экран
-    behavior: 'smooth'  //Это анимация
+    top: 1500,  
+    behavior: 'smooth'  
 })
 }
 
 function handleClick2() {
   window.scrollTo({
-    top: 2950,  // это координат где должен быть экран
-    behavior: 'smooth'  //Это анимация
+    top: 2960, 
+    behavior: 'smooth' 
 })
 }
 export default function Home() {
