@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <header className="header">
            <Link href= "/">Главная</Link>
-           <Link href= "/blog">Факты</Link>
+           <Link href= "/facts">Факты</Link>
            <Link href= "/contacts">Написать мне</Link>
         </header>
     )

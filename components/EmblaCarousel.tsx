@@ -1,4 +1,5 @@
 import './styles.css'
+import Link from 'next/link'
 import Image from 'next/image'
 import React from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
@@ -20,7 +21,7 @@ export const EmblaCarousel = () => {
         <div className="embla__slide"><Image height={1000} width={1000} src={imgCarousel3} alt=''></Image>
         <p>Любимый зал</p></div>
         <div className="embla__slide"><Image height={1000} width={1000} src={imgCarousel4} alt=''></Image>
-        <p>Кошка???</p></div>
+        <p className='cat-paragraph'>Кошка???</p><p><Link className='facts-link' href='/facts'> Перейти к фактам </Link></p></div>
       </div>
     </div>
   )

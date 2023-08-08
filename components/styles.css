@@ -1,21 +1,36 @@
-
 .embla {
-  width: 1200px;
-    overflow: hidden;
-    position: relative;
-    top: 2800px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .embla__container {
-    display: flex;
-  }
-  .embla__slide {
-    flex: 0 0 100%;
-    min-width: 0;
-  }
-  .embla__slide >p{
-    font-size: 30px;
-    font-weight: 800;
-    color:black;
-  }
+  width: 1000px;
+  overflow: hidden;
+  position: relative;
+  top: 2800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+}
+.embla__slide > p {
+  font-size: 30px;
+  font-weight: 800;
+  color: black;
+}
+
+.cat-paragraph {
+  display: flex;
+  float: left;
+}
+.facts-link {
+  display: flex;
+  font-size: 30px;
+  color: inherit;
+  text-decoration: none;
+  float: right;
+}
+.facts-link >a:hover {
+  color: #e0f5f5; 
+  text-decoration: underline; 
+}
