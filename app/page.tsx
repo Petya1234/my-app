@@ -1,41 +1,47 @@
-'use client'
+"use client";
 import Image from "next/image";
 import imgSrc from "../public/photos/1photo.jpg";
 import "@/app/main-content-styles.css";
 import { EmblaCarousel } from "@/components/EmblaCarousel";
 
-
 function handleClick() {
   window.scrollTo({
-    top: 1500,  
-    behavior: 'smooth'  
-})
+    top: 1500,
+    behavior: "smooth",
+  });
 }
 
 function handleClick2() {
   window.scrollTo({
-    top: 2960, 
-    behavior: 'smooth' 
-})
+    top: 2960,
+    behavior: "smooth",
+  });
 }
 export default function Home() {
   return (
-      
-      <div className="main-text-content">
+    <div>
+      <div className="welcome-content">
         <Image className="main-img" src={imgSrc} alt="" />
         <h1>
           Добро пожаловать на сайт о Пете Алексеенко <br />
           Здесь вы сможете узнать немного его биографии
         </h1>
-        <button className="button" onClick={handleClick}>Подробности</button>
-        <div className="main-info">
-          Вы знаете как меня зовут, но если бы этого было достаточно этот сайт не был бы создан. <br />
-      
-          Перейду сразу к делу, на этом сайте вы можете связаться со мной, подписаться на мои соцсети, посмотреть фоточки и может что-нибудь ещё, если я придумаю что-то. <br />
-          А пока предлагаю вам посмотреть небольшую подборку фоточек
-        </div>
-        <button className="button2" onClick={handleClick2}>К фото</button>
-        <EmblaCarousel/>
+        <button className="button" onClick={handleClick}>
+          Подробности
+        </button>
       </div>
+      <div className="main-info">
+        Вы знаете как меня зовут, но если бы этого было достаточно этот сайт не
+        был бы создан. <br />
+        Перейду сразу к делу, на этом сайте вы можете связаться со мной,
+        подписаться на мои соцсети, посмотреть фоточки и может что-нибудь ещё,
+        если я придумаю что-то. <br />А пока предлагаю вам посмотреть небольшую
+        подборку фоточек
+        <button className="button2" onClick={handleClick2}> К фото</button>
+      </div>
+      <div className="photo-carousel">
+        <EmblaCarousel />
+      </div>
+    </div>
   );
 }

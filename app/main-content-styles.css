@@ -7,15 +7,21 @@
   left: 200px;
 }
 
-.main-text-content {
-  width: 1600px;
+.welcome-content {
+  height: 1000px;
 }
-
-.main-text-content > h1 {
+.main-info {
+  text-align: left;
+  height: 1000px;
+  font-size: 40px;
+}
+.welcome-content > h1 {
   position: absolute;
   left: 1000px;
   top: 300px;
 }
+
+
 
 .button {
   position: absolute;
@@ -38,17 +44,10 @@
   transform: translate3d(0, 0, 0);
 }
 
-.main-info {
-  position: absolute;
-  width: 1400px;
-  top: 1700px;
-  font-size: 60px;
-}
+
 
 .button2 {
-  position: absolute;
-  top: 2300px;
-  left: 800px;
+  top: 100px;
   border: none;
   font-weight: 800;
   text-decoration: none;
