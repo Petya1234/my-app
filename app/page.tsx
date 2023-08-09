@@ -13,7 +13,7 @@ function handleClick() {
 
 function handleClick2() {
   window.scrollTo({
-    top: 2050,
+    top: 2090,
     behavior: "smooth",
   });
 }
