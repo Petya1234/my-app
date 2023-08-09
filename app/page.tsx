@@ -6,7 +6,7 @@ import { EmblaCarousel } from "@/components/EmblaCarousel";
 
 function handleClick() {
   window.scrollTo({
-    top: 1500,
+    top: 1000,
     behavior: "smooth",
   });
 }
@@ -31,12 +31,12 @@ export default function Home() {
         </button>
       </div>
       <div className="main-info">
-        Вы знаете как меня зовут, но если бы этого было достаточно этот сайт не
+        <div className="main-text">Вы знаете как меня зовут, но если бы этого было достаточно этот сайт не
         был бы создан. <br />
         Перейду сразу к делу, на этом сайте вы можете связаться со мной,
         подписаться на мои соцсети, посмотреть фоточки и может что-нибудь ещё,
         если я придумаю что-то. <br />А пока предлагаю вам посмотреть небольшую
-        подборку фоточек
+        подборку фоточек</div>
         <button className="button2" onClick={handleClick2}> К фото</button>
       </div>
       <div className="photo-carousel">

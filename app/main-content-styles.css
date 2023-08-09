@@ -5,6 +5,7 @@
   position: absolute;
   top: 200px;
   left: 200px;
+  border: 3px solid #ffffff;
 }
 
 .welcome-content {
@@ -15,10 +16,17 @@
   height: 1000px;
   font-size: 40px;
 }
+.main-text {
+  position:relative;
+  top:200px;
+}
 .welcome-content > h1 {
   position: absolute;
   left: 1000px;
   top: 300px;
+}
+.photo-carousel {
+  height: 1200px;
 }
 
 
@@ -47,7 +55,9 @@
 
 
 .button2 {
-  top: 100px;
+  position: relative;
+  left: 1300px;
+  top: 140px;
   border: none;
   font-weight: 800;
   text-decoration: none;
