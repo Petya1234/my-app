@@ -24,7 +24,6 @@ export default function Home() {
         <Image className="main-img" src={imgSrc} alt="" />
         <h1>
           Добро пожаловать на сайт о Пете Алексеенко <br />
-          Здесь вы сможете узнать немного его биографии
         </h1>
         <button className="button" onClick={handleClick}>
           Подробности
