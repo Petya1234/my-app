@@ -44,20 +44,16 @@
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
-  background-image: linear-gradient(270deg, #f8fafa, #979797);
   background-size: 200% auto;
-  transition: 0.5s;
   border: none;
-  animation: gradient 5s ease infinite;
-  transform: translate3d(0, 0, 0);
 }
 
 
 
 .button2 {
   position: relative;
-  left: 1250px;
-  top: 160px;
+  left: 1300px;
+  top: 140px;
   border: none;
   font-weight: 800;
   text-decoration: none;
@@ -70,7 +66,4 @@
   letter-spacing: 2px;
   background-image: linear-gradient(270deg, #f8fafa, #979797);
   background-size: 200% auto;
-  transition: 0.5s;
-  animation: gradient 5s ease infinite;
-  transform: translate3d(0, 0, 0);
 }

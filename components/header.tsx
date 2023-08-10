@@ -2,13 +2,13 @@ import{ Navigation } from './Navigation'
 import './styles.css'
 
 const navItems = [
-    {label: 'Home', href: '/'},
-    {label: 'Contacts', href:'/contacts'},
+    {label: 'Главная', href: '/'},
+    {label: 'Написать мне', href:'/contacts'},
 ];
 
 const Header = () => {
     return (
-        <header className="header-block">
+        <header>
            <Navigation navLinks={navItems} />
         </header>
     )

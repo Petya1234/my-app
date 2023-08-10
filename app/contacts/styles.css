@@ -1,19 +1,57 @@
-.cont-link {
-    align-items: center;
-    padding: auto;
-}
-
-li {
-    display: flex;
-    font-size: 20px;
-    align-items: center;
+.main-div {
     justify-content: center;
-}
+    display: flex;
 
+}
 
 .box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 600px;
+  height: 600px;
+  padding: 3em;
+  box-sizing: border-box;
+  color: #fff;
+  background: white;
+  background-clip: padding-box; /* !important */
+  border: solid 5px transparent; /* !important */
+  border-radius: 1em;
 }
-      
+.img-box-tg {
+    margin-left: auto;
+    margin-right: auto;
+}
+.img-box-vk {
+    margin-left: auto;
+    margin-right: auto;
+}
+.telegram-qr {
+    position: absolute;
+    top: 210px;
+    left: 470px;
+}
+.vk-qr {
+    position: absolute;
+    top: 210px;
+    left: 1115px;
+}
+.link-inscr-vk {
+    position: absolute;
+    font-weight: bolder;
+    font-size: 30px;
+    top: 500px;
+    left: 1145px;
+    color: black;
+    
+}
+
+.link-inscr-tg {
+    position: absolute;
+    font-weight: bolder;
+    font-size: 30px;
+    top: 500px;
+    left: 535px;
+    color: black;
+    
+}
