@@ -10,7 +10,7 @@
   margin-right: 20px;
   width: 550px;
   height: 550px;
-  padding: 3em;
+  padding-top: 20px;
   box-sizing: border-box;
   color: #fff;
   background: white;
@@ -28,13 +28,13 @@
 }
 .telegram-qr {
     position: absolute;
-    top: 210px;
-    left: 215px;
+    top: 190px;
+    left: 200px;
 }
 .vk-qr {
     position: absolute;
-    top: 210px;
-    left: 815px;
+    top: 190px;
+    left: 800px;
 }
 .link-inscr-vk {
     position: absolute;
