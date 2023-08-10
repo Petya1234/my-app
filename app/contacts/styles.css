@@ -58,4 +58,20 @@ ul {
     color: black; 
 }
 
+.img-box-inst {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.inst-qr {
+    display: flex;
+    justify-content: center;
+}
+.link-inscr-inst {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 30px;
+    color: black; 
+}
+
 

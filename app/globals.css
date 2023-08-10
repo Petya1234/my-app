@@ -31,11 +31,11 @@ body {
 }
 
 .container {
-  background: linear-gradient(90deg, #797777, #1f191b, #737374, #767777);
+  background: linear-gradient(90deg, #110f0f, #313131, #1b1b1b, #020202);
 	background-size: 400% 400%;
 	animation: gradient 20s ease infinite;
 	transform: translate3d(0, 0, 0);
-  width: 1920px;
+  width: 100%;
 
 }
 

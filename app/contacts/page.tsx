@@ -5,6 +5,8 @@ import imgTelegram from "@/public/photos/telegram-photo.jpg";
 import imgTelegramQr from "@/public/photos/telegram-qr-photo.png";
 import ImgVk from "@/public/photos/vk-photo.jpg";
 import ImgVkQr from "@/public/photos/vk-qr-photo.jpg";
+import ImgInst from "@/public/photos/instagram-photo.jpg";
+import ImgInstQr from "@/public/photos/instagram-photo-qr.png";
 
 export const metadata: Metadata = {
   title: "Contacts",
@@ -34,12 +36,13 @@ export default function Contacts() {
         </ul>
       </div>
       <div className="box">
-        <p>
-          Современные технологии достигли такого уровня, что сплоченность
-          команды профессионалов прекрасно подходит для реализации вывода
-          текущих активов. Кстати, предприниматели в сети интернет объединены в
-          целые кластеры себе подобных.
-        </p>
+      <ul>
+          <div className="img-box-inst">
+            <Image width={150} height={150} src={ImgInst} alt=""></Image>
+          </div>
+          <div className="inst-qr"><Image  src={ImgInstQr} width={300} height={300} alt=""></Image> </div>
+          <p className="link-inscr-inst">@QWRTTQR</p>
+        </ul>
       </div>
     </div>
   );
