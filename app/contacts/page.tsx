@@ -1,6 +1,6 @@
+import "./styles.css";
 import { Metadata } from "next";
 import Image from "next/image";
-import "./styles.css";
 import imgTelegram from "@/public/photos/telegram-photo.jpg";
 import imgTelegramQr from "@/public/photos/telegram-qr-photo.png";
 import ImgVk from "@/public/photos/vk-photo.jpg";
@@ -16,7 +16,7 @@ export default function Contacts() {
   return (
     <div className="main-div">
       <ul>
-        <h1 className="main-text">Мои социальные сети</h1>
+        <h1 className="main-topic">Мои социальные сети</h1>
         <div className="main-div">
         <div className="box">
           <ul>
