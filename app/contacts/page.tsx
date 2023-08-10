@@ -4,7 +4,7 @@ import "./styles.css";
 import imgTelegram from "@/public/photos/telegram-photo.jpg";
 import imgTelegramQr from "@/public/photos/telegram-qr-photo.png";
 import ImgVk from "@/public/photos/vk-photo.jpg";
-import ImgVkQr from "@/public/photos/vk-qr-photo.jpg";
+import ImgVkQr from "@/public/photos/vk-qr-photo.png";
 import ImgInst from "@/public/photos/instagram-photo.jpg";
 import ImgInstQr from "@/public/photos/instagram-photo-qr.png";
 
