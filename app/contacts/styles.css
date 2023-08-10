@@ -8,8 +8,8 @@
   display: flex;
   margin-left: 20px;
   margin-right: 20px;
-  width: 600px;
-  height: 600px;
+  width: 550px;
+  height: 550px;
   padding: 3em;
   box-sizing: border-box;
   color: #fff;
@@ -29,19 +29,19 @@
 .telegram-qr {
     position: absolute;
     top: 210px;
-    left: 470px;
+    left: 215px;
 }
 .vk-qr {
     position: absolute;
     top: 210px;
-    left: 1115px;
+    left: 815px;
 }
 .link-inscr-vk {
     position: absolute;
     font-weight: bolder;
     font-size: 30px;
     top: 500px;
-    left: 1145px;
+    left: 850px;
     color: black;
     
 }
@@ -51,7 +51,7 @@
     font-weight: bolder;
     font-size: 30px;
     top: 500px;
-    left: 535px;
+    left: 280px;
     color: black;
     
 }
