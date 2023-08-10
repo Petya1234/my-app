@@ -1,9 +1,18 @@
 .main-div {
     justify-content: center;
     display: flex;
-
+    margin-top: 20px;
 }
 
+ul {
+    width: 100%;
+}
+.main-text {
+    width: 100%;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 50px;
+}
 .box {
     margin-left: auto;
     margin-right: auto;
@@ -20,9 +29,7 @@
   border: solid 5px transparent; /* !important */
   border-radius: 1em;
 }
-ul {
-    width: 100%;
-}
+
 .img-box-tg {
     display: flex;
     justify-content: center;

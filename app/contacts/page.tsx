@@ -15,35 +15,50 @@ export const metadata: Metadata = {
 export default function Contacts() {
   return (
     <div className="main-div">
-      <div className="box">
-        <ul>
-          <div className="img-box-tg">
-            <Image width={150} height={150} src={imgTelegram} alt=""></Image>
-          </div>
-          <div className="telegram-qr">
-            <Image src={imgTelegramQr} width={300} height={300} alt=""></Image>
-          </div>
-          <p className="link-inscr-tg">@QWRTTQR</p>
-        </ul>
-      </div>
-      <div className="box">
-        <ul>
-          <div className="img-box-vk">
-            <Image width={150} height={150} src={ImgVk} alt=""></Image>
-          </div>
-          <div className="vk-qr"><Image  src={ImgVkQr} width={300} height={300} alt=""></Image> </div>
-          <p className="link-inscr-vk">VK.COM/QWRTTQ</p>
-        </ul>
-      </div>
-      <div className="box">
       <ul>
-          <div className="img-box-inst">
-            <Image width={150} height={150} src={ImgInst} alt=""></Image>
-          </div>
-          <div className="inst-qr"><Image  src={ImgInstQr} width={300} height={300} alt=""></Image> </div>
-          <p className="link-inscr-inst">@QWRTTQR</p>
-        </ul>
-      </div>
+        <h1 className="main-text">Мои социальные сети</h1>
+        <div className="main-div">
+        <div className="box">
+          <ul>
+            <div className="img-box-tg">
+              <Image width={150} height={150} src={imgTelegram} alt=""></Image>
+            </div>
+            <div className="telegram-qr">
+              <Image
+                src={imgTelegramQr}
+                width={300}
+                height={300}
+                alt=""
+              ></Image>
+            </div>
+            <p className="link-inscr-tg">@QWRTTQR</p>
+          </ul>
+        </div>
+        <div className="box">
+          <ul>
+            <div className="img-box-vk">
+              <Image width={150} height={150} src={ImgVk} alt=""></Image>
+            </div>
+            <div className="vk-qr">
+              <Image src={ImgVkQr} width={300} height={300} alt=""></Image>{" "}
+            </div>
+            <p className="link-inscr-vk">VK.COM/QWRTTQ</p>
+          </ul>
+        </div>
+        <div className="box">
+          <ul>
+            <div className="img-box-inst">
+              <Image width={150} height={150} src={ImgInst} alt=""></Image>
+            </div>
+            <div className="inst-qr">
+              <Image src={ImgInstQr} width={300} height={300} alt=""></Image>{" "}
+            </div>
+            <p className="link-inscr-inst">@QWRTTQR</p>
+          </ul>
+        </div>
+        </div>
+      </ul>
+      
     </div>
   );
 }

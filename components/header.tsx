@@ -9,7 +9,7 @@ const navItems = [
 const Header = () => {
     return (
         <header>
-           <Navigation navLinks={navItems} />
+            <div className='navbar'><Navigation navLinks={navItems} /></div>
         </header>
     )
 }
