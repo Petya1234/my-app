@@ -1,16 +1,6 @@
-// pages/index.tsx
-import type { ReactElement } from 'react'
-import Layout from '@/app/sign/signLayout'
-
-
-export default function Page() {
+export default function Home() {
   return (
-    <div><p>FDFSDFSDFSDFE</p></div>
+    <div>
+    </div>
   );
 }
-
-Page.getLayout = (page: ReactElement) => (
-  <Layout>
-    {page}
-  </Layout>
-)
