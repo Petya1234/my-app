@@ -81,11 +81,9 @@ header {
 }
 .nav-button:hover {
   border-radius: 0;
+  font-weight: 700;
 }
 
-.nav-box:hover {
-  height: 100px;
-}
 a.active {
   color: rgb(177, 253, 253);
 }
