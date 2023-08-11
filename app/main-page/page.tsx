@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
-import imgSrc from "../public/photos/1photo.jpg";
-import "@/app/main-content-styles.css";
+import imgSrc from "@/public/photos/1photo.jpg";
+import "@/app/main-page/main-content-styles.css";
 import { EmblaCarousel } from "@/components/EmblaCarousel";
 
 function handleClick() {

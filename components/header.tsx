@@ -5,7 +5,7 @@ import './styles.css'
 
 
 const navItems = [
-    {label: 'Главная', href: '/'},
+    {label: 'Главная', href: '/main-page'},
     {label: 'Написать мне', href:'/contacts'},
 ];
 
