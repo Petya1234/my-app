@@ -1,5 +1,6 @@
 import "./styles.css";
 import { Metadata } from "next";
+import Link from "next/link";
 import Image from "next/image";
 import imgTelegram from "@/public/photos/telegram-photo.jpg";
 import imgTelegramQr from "@/public/photos/telegram-qr-photo.png";
@@ -21,10 +22,10 @@ export default function Contacts() {
         <div className="box">
           <ul>
             <div className="img-box-tg">
-              <Image width={150} height={150} src={imgTelegram} alt=""></Image>
+              <Link target="_blank" href="https://t.me/qwrttqr"><Image className="tg-link" width={150} height={150} src={imgTelegram} alt=""></Image></Link>
             </div>
             <div className="telegram-qr">
-              <Image
+              <Image 
                 src={imgTelegramQr}
                 width={300}
                 height={300}
@@ -37,7 +38,7 @@ export default function Contacts() {
         <div className="box">
           <ul>
             <div className="img-box-vk">
-              <Image width={150} height={150} src={ImgVk} alt=""></Image>
+              <Link target="_blank" href="https://t.me/qwrttqr" ><Image className="vk-link" width={150} height={150} src={ImgVk} alt=""></Image></Link>
             </div>
             <div className="vk-qr">
               <Image src={ImgVkQr} width={300} height={300} alt=""></Image>{" "}
@@ -48,7 +49,7 @@ export default function Contacts() {
         <div className="box">
           <ul>
             <div className="img-box-inst">
-              <Image width={150} height={150} src={ImgInst} alt=""></Image>
+              <Link target="_blank" href="https://t.me/qwrttqr"><Image className="inst-link" width={150} height={150} src={ImgInst} alt=""></Image></Link>
             </div>
             <div className="inst-qr">
               <Image src={ImgInstQr} width={300} height={300} alt=""></Image>{" "}
