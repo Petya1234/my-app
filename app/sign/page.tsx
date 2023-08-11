@@ -1,15 +1,6 @@
-// pages/index.tsx
-import type { ReactElement } from 'react';
-import Layout from './layout';
 
 export default function Page() {
-  return {
-    // ...
-  };
+  return (
+    <div>ззазызваз</div>
+  )
 }
-
-Page.getLayout = (page: ReactElement) => (
-  <Layout>
-    {page}
-  </Layout>
-);

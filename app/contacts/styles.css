@@ -3,6 +3,9 @@
     display: flex;
     margin-top: 20px;
 }
+.second-content {
+    height: 1000px;
+}
 
 ul {
     width: 100%;

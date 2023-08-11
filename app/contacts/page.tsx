@@ -2,6 +2,7 @@ import "./styles.css";
 import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+import { Header } from "@/components/header";
 import imgTelegram from "@/public/photos/telegram-photo.jpg";
 import imgTelegramQr from "@/public/photos/telegram-qr-photo.png";
 import ImgVk from "@/public/photos/vk-photo.jpg";
@@ -15,6 +16,8 @@ export const metadata: Metadata = {
 
 export default function Contacts() {
   return (
+    <div>
+      <Header/>
     <div className="main-div">
       <ul>
         <h1 className="main-topic">Мои социальные сети</h1>
@@ -59,7 +62,8 @@ export default function Contacts() {
         </div>
         </div>
       </ul>
-      
+    </div>
+    <div className="second-content">pppp</div>
     </div>
   );
 }

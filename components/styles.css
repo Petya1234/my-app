@@ -34,12 +34,19 @@
 }
 
 header {
-  width: 100%;
+  display: block;
   height: 90px;
   background: linear-gradient(90deg, #0a0a0a, #1b1b1b, #000000, #1e1f1f);
   animation: gradient 20s ease infinite;
   transform: translate3d(0, 0, 0);
   background-size: 400% 400%;
+}
+footer {
+  margin-top: -1px;
+  height: 50px;
+  background-color: black;
+  padding-top: 10px;
+  width: 100%;
 }
 
 .navbar > a {
@@ -88,10 +95,12 @@ a.active {
   color: rgb(177, 253, 253);
 }
 
-.footer {
-  margin-bottom: -1px;
-  height: 50px;
-  background-color: black;
-  padding-top: 10px;
+
+.container {
+  background: linear-gradient(90deg, #110f0f, #313131, #1b1b1b, #020202);
+	background-size: 400% 400%;
+	animation: gradient 20s ease infinite;
+	transform: translate3d(0, 0, 0);
   width: 100%;
+
 }
