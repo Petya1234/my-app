@@ -9,7 +9,7 @@ const navItems = [
 const Header = () => {
     return (
         <header>
-            <div className='navbar'><Navigation navLinks={navItems} /></div>
+            <div className='navbar'><Navigation navLinks={navItems} /> <button className="nav-button">Войти</button> </div>
         </header>
     )
 }

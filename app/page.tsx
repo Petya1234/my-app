@@ -36,7 +36,7 @@ export default function Home() {
         подписаться на мои соцсети, посмотреть фоточки и может что-нибудь ещё,
         если я придумаю что-то. <br />А пока предлагаю вам посмотреть небольшую
         подборку фоточек</div>
-        <button className="button2" onClick={handleClick2}> К фото</button>
+        <button className="button2" onClick={handleClick2}>К фото</button>
       </div>
       <div className="photo-carousel">
         <EmblaCarousel />
