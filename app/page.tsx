@@ -1,7 +1,8 @@
 "use client";
 import Image from "next/image";
 import imgSrc from "@/public/photos/1photo.jpg";
-import "@/app/main-page/main-content-styles.css";
+import "./main-content-styles.css";
+import { Header } from "@/components/header";
 import { EmblaCarousel } from "@/components/EmblaCarousel";
 
 function handleClick() {
@@ -20,6 +21,7 @@ function handleClick2() {
 export default function Home() {
   return (
     <div>
+      <Header />
       <div className="welcome-content">
         <Image className="main-img" src={imgSrc} alt="" />
         <h1>

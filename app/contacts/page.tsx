@@ -8,6 +8,7 @@ import ImgVk from "@/public/photos/vk-photo.jpg";
 import ImgVkQr from "@/public/photos/vk-qr-photo.png";
 import ImgInst from "@/public/photos/instagram-photo.jpg";
 import ImgInstQr from "@/public/photos/instagram-photo-qr.png";
+import { Header } from "@/components/header";
 
 export const metadata: Metadata = {
   title: "Contacts",
@@ -15,6 +16,8 @@ export const metadata: Metadata = {
 
 export default function Contacts() {
   return (
+    <div>
+      <Header />
     <div className="main-div">
       <ul>
         <h1 className="main-topic">Мои социальные сети</h1>
@@ -60,6 +63,7 @@ export default function Contacts() {
         </div>
       </ul>
       
+    </div>
     </div>
   );
 }
