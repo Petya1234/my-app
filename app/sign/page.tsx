@@ -1,15 +1,20 @@
-import "./styles.css";
+import "./styles-sign.css";
+import { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Sign",
+};
 
 export default function Home() {
   return (
-    <div className="main-container">
-      <div className="box">
+    <div className="sign-container">
+      <div className="sign-box">
         <ul>
-        <div className="in-transcription">
+        <div className="sign-in-transcription">
           <p>Вход</p>
         </div>
-        <div className="enter-email">
+        <div className="sign-enter-email">
           <input
             type="text"
             placeholder="email"
@@ -17,7 +22,7 @@ export default function Home() {
             required
           ></input>
         </div>
-        <div className="enter-password">
+        <div className="sign-enter-password">
           <input
             type="text"
             placeholder="password"
@@ -25,10 +30,10 @@ export default function Home() {
             required
           ></input>
         </div>
-        <div className='register-link'>
-          <Link className="link-class" href={''}>Нет аккаунта?</Link>
+        <div className='sign-register-link'>
+          <Link className="sign-link-class" href={''}>Нет аккаунта?</Link>
         </div>
-        <div className="sign-button"><button className="button">Войти</button> </div>
+        <div className="sign-button-div"><button className="sign-button">Войти</button> </div>
         </ul>
       </div>
     </div>
