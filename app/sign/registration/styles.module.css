@@ -1,0 +1,90 @@
+.signContainer {
+    height: 1030px;
+    display: flex;
+    justify-content: center;
+}
+.ulClass {
+    width: 100%;
+}
+
+.signBox {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    width: 550px;
+    height: 700px;
+    padding-top: 20px;
+    box-sizing: border-box;
+    background: linear-gradient(45deg, #383838, #929292, #ffffff);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	transform: translate3d(0, 0, 0);
+    background-clip: padding-box; /* !important */
+    border: solid 5px transparent; /* !important */
+    border-radius: 1em;
+  }
+.signInTranscription {
+    text-align: center;
+    font-size: 40px;
+    height: auto;
+}
+.signInput {
+    display: flex;
+    justify-content: center;
+}
+.signButtonDiv {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.signButton {
+    display: flex;
+  color: #000000;
+  background-color: white;
+  font-size: 40px;
+  width: 400px;
+  height: 60px;
+  box-sizing: border-box;
+  background-clip: padding-box; 
+  border: none;
+  justify-content: center;
+  -webkit-transition: all 0.1s ease;
+  -moz-transition: all 0.1s ease;
+  -o-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+  }
+.signButton:hover {
+    width: 450px;
+}
+.signRegisterLink {
+    width: 400px;
+    margin-top: 15px;
+    font-size: 30px;
+    font-weight: 700;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.signLinkClass {
+    color: black;
+    text-decoration: none;
+}
+.text {
+    width: 400px;
+    padding: 12px 20px;
+    margin: 20px 0;
+    display: inline-block;
+    outline: none;
+    font-size: 30px;
+}
+  @keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}

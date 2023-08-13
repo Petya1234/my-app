@@ -3,16 +3,24 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Sign in",
+  title: "Sign up",
 };
 
-export default function signIn() {
+export default function signUp() {
   return (
     <div className={styles.signContainer}>
       <div className={styles.signBox}>
-        <ul>
+        <ul className={styles.ulClass}>
         <div className={styles.signInTranscription}>
-          <p>Вход</p>
+          <p>Регистрация</p>
+        </div>
+        <div className={styles.signInput}>
+          <input
+            className={styles.text}
+            placeholder="Name"
+            name="uname"
+            required
+          ></input>
         </div>
         <div className={styles.signInput}>
           <input
@@ -30,10 +38,18 @@ export default function signIn() {
             required
           ></input>
         </div>
-        <div className={styles.signRegisterLink}>
-          <Link className={styles.signLinkClass} href={'/sign/registration'}>Нет аккаунта?</Link>
+        <div className={styles.signInput}>
+          <input
+            className={styles.text}
+            placeholder="password again"
+            name="uname"
+            required
+          ></input>
         </div>
-        <div className={styles.signButtonDiv}><button className={styles.signButton}>Войти</button> </div>
+        <div className={styles.signButtonDiv}><button className={styles.signButton}>Зарегистрироваться</button> </div>
+        <div className={styles.signRegisterLink}>
+          <Link className={styles.signLinkClass} href={'/'}>На главную</Link>
+        </div>
         </ul>
       </div>
     </div>
