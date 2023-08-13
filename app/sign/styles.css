@@ -1,3 +1,82 @@
-p {
-    color: white;
+.main-container {
+    height: 1030px;
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    width: 550px;
+    height: 550px;
+    padding-top: 20px;
+    box-sizing: border-box;
+    background: linear-gradient(45deg, #383838, #929292, #ffffff);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	transform: translate3d(0, 0, 0);
+    background-clip: padding-box; /* !important */
+    border: solid 5px transparent; /* !important */
+    border-radius: 1em;
+  }
+.in-transcription {
+    text-align: center;
+    font-size: 40px;
+    height: auto;
+}
+.register-link {
+    width: 400px;
+    font-size: 30px;
+    text-align: right;
+}
+.link-class {
+    color: black;
+    text-decoration: none;
+}
+.sign-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.button {
+    display: flex;
+  margin-right: 15px;
+  color: #000000;
+  background-color: white;
+  font-size: 40px;
+  width: 300px;
+  height: 60px;
+  float: right;
+  box-sizing: border-box;
+  background-clip: padding-box; 
+  border: none;
+  align-items: center;
+  justify-content: center;
+  -webkit-transition: all 0.1s ease;
+  -moz-transition: all 0.1s ease;
+  -o-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+  }
+.button:hover {
+    width: 350px;
+}
+input[type=text], input[type=password] {
+    width: 400px;
+    padding: 12px 20px;
+    margin: 20px 0;
+    display: inline-block;
+    outline: none;
+    font-size: 30px;
+}
+  @keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
