@@ -22,7 +22,7 @@ export const EmblaCarousel = () => {
         <div className="embla__slide"><Image height={1000} width={1100} src={imgCarousel3} alt=''></Image>
         <p>Любимый зал</p></div>
         <div className="embla__slide"><Image height={1000} width={1100} src={imgCarousel5} alt=''></Image>
-        <p>Кореша(не все)</p></div>
+        <p>Друзья(здесь не все)</p></div>
         <div className="embla__slide"><Image height={1000} width={1100} src={imgCarousel4} alt=''></Image>
         <p className='cat-paragraph'>Кошка???</p></div>
       </div>

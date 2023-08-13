@@ -1,4 +1,4 @@
-import "./styles-sign.css";
+import styles from './styles.module.css'
 import { Metadata } from "next";
 import Link from "next/link";
 
@@ -8,13 +8,13 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div className="sign-container">
-      <div className="sign-box">
+    <div className={styles.signContainer}>
+      <div className={styles.signBox}>
         <ul>
-        <div className="sign-in-transcription">
+        <div className={styles.signInTranscription}>
           <p>Вход</p>
         </div>
-        <div className="sign-enter-email">
+        <div className={styles.signInput}>
           <input
             type="text"
             placeholder="email"
@@ -22,7 +22,7 @@ export default function Home() {
             required
           ></input>
         </div>
-        <div className="sign-enter-password">
+        <div className={styles.signInput}>
           <input
             type="text"
             placeholder="password"
@@ -30,10 +30,10 @@ export default function Home() {
             required
           ></input>
         </div>
-        <div className='sign-register-link'>
-          <Link className="sign-link-class" href={''}>Нет аккаунта?</Link>
+        <div className={styles.signRegisterLink}>
+          <Link className={styles.signLinkClass} href={''}>Нет аккаунта?</Link>
         </div>
-        <div className="sign-button-div"><button className="sign-button">Войти</button> </div>
+        <div className={styles.signButtonDiv}><button className={styles.signButton}>Войти</button> </div>
         </ul>
       </div>
     </div>

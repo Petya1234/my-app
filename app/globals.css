@@ -30,14 +30,6 @@ body {
   grid-template-rows: auto 1fr auto;
 }
 
-.container {
-  background: linear-gradient(90deg, #110f0f, #313131, #1b1b1b, #020202);
-	background-size: 400% 400%;
-	animation: gradient 20s ease infinite;
-	transform: translate3d(0, 0, 0);
-  width: 100%;
-
-}
 
 @media (prefers-color-scheme: dark) {
   html {

@@ -1,10 +1,10 @@
-.sign-container {
+.signContainer {
     height: 1030px;
     display: flex;
     justify-content: center;
 }
 
-.sign-box {
+.signBox {
     display: flex;
     justify-content: center;
     margin-top: 40px;
@@ -20,26 +20,30 @@
     border: solid 5px transparent; /* !important */
     border-radius: 1em;
   }
-.sign-in-transcription {
+.signInTranscription {
     text-align: center;
     font-size: 40px;
     height: auto;
 }
-.sign-register-link {
+.signInput {
+    display: flex;
+    justify-content: center;
+}
+.signRegisterLink {
     width: 400px;
     font-size: 30px;
     text-align: right;
 }
-.sign-link-class {
+.signLinkClass {
     color: black;
     text-decoration: none;
 }
-.sign-button-div {
+.signButtonDiv {
     display: flex;
     justify-content: center;
     margin-top: 50px;
 }
-.sign-button {
+.signButton {
     display: flex;
   margin-right: 15px;
   color: #000000;
@@ -58,7 +62,7 @@
   -o-transition: all 0.1s ease;
   transition: all 0.1s ease;
   }
-.sign-button:hover {
+.signButton:hover {
     width: 350px;
 }
 input[type=text], input[type=password] {
