@@ -10,7 +10,7 @@ export default function signIn() {
   return (
     <div className={styles.signContainer}>
       <div className={styles.signBox}>
-        <ul>
+        <ul className={styles.ulClass}>
         <div className={styles.signInTranscription}>
           <p>Вход</p>
         </div>
@@ -30,10 +30,10 @@ export default function signIn() {
             required
           ></input>
         </div>
+        <div className={styles.signButtonDiv}><button className={styles.signButton}>Войти</button> </div>
         <div className={styles.signRegisterLink}>
           <Link className={styles.signLinkClass} href={'/sign/registration'}>Нет аккаунта?</Link>
         </div>
-        <div className={styles.signButtonDiv}><button className={styles.signButton}>Войти</button> </div>
         </ul>
       </div>
     </div>

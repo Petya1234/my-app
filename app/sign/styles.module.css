@@ -3,13 +3,16 @@
     display: flex;
     justify-content: center;
 }
+.ulClass {
+    width: 100%;
+}
 
 .signBox {
     display: flex;
     justify-content: center;
     margin-top: 40px;
     width: 550px;
-    height: 550px;
+    height: 500px;
     padding-top: 20px;
     box-sizing: border-box;
     background: linear-gradient(45deg, #383838, #929292, #ffffff);
@@ -29,15 +32,6 @@
     display: flex;
     justify-content: center;
 }
-.signRegisterLink {
-    width: 400px;
-    font-size: 30px;
-    text-align: right;
-}
-.signLinkClass {
-    color: black;
-    text-decoration: none;
-}
 .signButtonDiv {
     display: flex;
     justify-content: center;
@@ -45,17 +39,16 @@
 }
 .signButton {
     display: flex;
-  margin-right: 15px;
+    justify-content: center;
+    align-items: center;
   color: #000000;
   background-color: white;
   font-size: 40px;
-  width: 300px;
+  width: 400px;
   height: 60px;
-  float: right;
   box-sizing: border-box;
   background-clip: padding-box; 
   border: none;
-  align-items: center;
   justify-content: center;
   -webkit-transition: all 0.1s ease;
   -moz-transition: all 0.1s ease;
@@ -63,7 +56,20 @@
   transition: all 0.1s ease;
   }
 .signButton:hover {
-    width: 350px;
+    width: 450px;
+}
+.signRegisterLink {
+    width: 400px;
+    margin-top: 15px;
+    font-size: 30px;
+    font-weight: 700;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.signLinkClass {
+    color: black;
+    text-decoration: none;
 }
 .text {
     width: 400px;

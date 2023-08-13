@@ -39,6 +39,8 @@
 }
 .signButton {
     display: flex;
+    justify-content: center;
+    align-items: center;
   color: #000000;
   background-color: white;
   font-size: 40px;
