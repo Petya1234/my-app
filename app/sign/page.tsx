@@ -16,7 +16,7 @@ export default function Home() {
         </div>
         <div className={styles.signInput}>
           <input
-            type="text"
+            className={styles.text}
             placeholder="email"
             name="uname"
             required
@@ -24,7 +24,7 @@ export default function Home() {
         </div>
         <div className={styles.signInput}>
           <input
-            type="text"
+            className={styles.text}
             placeholder="password"
             name="uname"
             required
