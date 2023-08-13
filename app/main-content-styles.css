@@ -26,7 +26,8 @@
   top: 300px;
 }
 .photo-carousel {
-  height: 1100px;
+  display: flex;
+  justify-content: center;
 }
 
 

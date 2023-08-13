@@ -2,7 +2,6 @@
   width: 1100px;
   overflow: hidden;
   position: relative;
-  left: 410px;
 }
 .embla__container {
   display: flex;
@@ -10,6 +9,8 @@
 .embla__slide {
   flex: 0 0 100%;
   min-width: 0;
+  display: flex;
+  justify-content: center;
 }
 .embla__slide > p {
   font-size: 30px;

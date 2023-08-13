@@ -15,16 +15,16 @@ export const EmblaCarousel = () => {
   return (
     <div className="embla" ref={emblaRef}>
       <div className="embla__container">
-        <div className="embla__slide"><Image height={1000} width={1100} src={imgCarousel1} alt=''></Image>
-        <p>Мои новые кроссики</p></div>
-        <div className="embla__slide"><Image height={1000} width={1100} src={imgCarousel2} alt=''></Image>
-        <p>Лагерь</p></div>
-        <div className="embla__slide"><Image height={1000} width={1100} src={imgCarousel3} alt=''></Image>
-        <p>Любимый зал</p></div>
-        <div className="embla__slide"><Image height={1000} width={1100} src={imgCarousel5} alt=''></Image>
-        <p>Друзья(здесь не все)</p></div>
-        <div className="embla__slide"><Image height={1000} width={1100} src={imgCarousel4} alt=''></Image>
-        <p className='cat-paragraph'>Кошка???</p></div>
+        <div className="embla__slide"><ul><Image height={1000} width={1100} src={imgCarousel1} alt=''></Image>
+        <p>Мои новые кроссики</p></ul></div>
+        <div className="embla__slide"><ul><Image height={1000} width={1100} src={imgCarousel2} alt=''></Image>
+        <p>Лагерь</p></ul></div>
+        <div className="embla__slide"><ul><Image height={1000} width={1100} src={imgCarousel3} alt=''></Image>
+        <p>Любимый зал</p></ul></div>
+        <div className="embla__slide"><ul><Image height={1000} width={1100} src={imgCarousel5} alt=''></Image>
+        <p>Друзья(здесь не все)</p></ul></div>
+        <div className="embla__slide"><ul><Image height={1000} width={1100} src={imgCarousel4} alt=''></Image>
+        <p className='cat-paragraph'>Кошка???</p></ul></div>
       </div>
     </div>
   )
