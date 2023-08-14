@@ -12,7 +12,7 @@ const navItems = [
 const Header = () => {
     return (
         <header>
-            <div className='navbar'><Navigation navLinks={navItems} /> <Link href={'/sign'}><button className="nav-button">Войти</button></Link></div>
+            <div className='navbar'><Navigation navLinks={navItems} /> <Link href={'/auth/sign'}><button className="nav-button">Войти</button></Link></div>
         </header>
     )
 }

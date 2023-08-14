@@ -11,7 +11,7 @@
     display: flex;
     justify-content: center;
     margin-top: 40px;
-    width: 550px;
+    width: 500px;
     height: 500px;
     padding-top: 20px;
     box-sizing: border-box;
@@ -73,7 +73,7 @@
 }
 .text {
     width: 400px;
-    padding: 12px 20px;
+    padding: 8px 20px;
     margin: 20px 0;
     display: inline-block;
     outline: none;

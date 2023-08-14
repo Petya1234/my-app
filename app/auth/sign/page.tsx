@@ -17,7 +17,7 @@ export default function signIn() {
         <div className={styles.signInput}>
           <input
             className={styles.text}
-            placeholder="email"
+            placeholder="Email"
             name="uname"
             required
           ></input>
@@ -25,14 +25,14 @@ export default function signIn() {
         <div className={styles.signInput}>
           <input
             className={styles.text}
-            placeholder="password"
+            placeholder="Password"
             name="uname"
             required
           ></input>
         </div>
         <div className={styles.signButtonDiv}><button className={styles.signButton}>Войти</button> </div>
         <div className={styles.signRegisterLink}>
-          <Link className={styles.signLinkClass} href={'/sign/registration'}>Нет аккаунта?</Link>
+          <Link className={styles.signLinkClass} href={'/auth/registration'}>Нет аккаунта?</Link>
         </div>
         </ul>
       </div>
