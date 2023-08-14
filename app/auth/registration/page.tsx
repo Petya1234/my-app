@@ -7,12 +7,6 @@ import { FormEventHandler } from 'react';
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import {initFirebase} from '@/app/firebase/firebaseApp'
 
-
-export const metadata: Metadata = {
-  title: "Sign up",
-};
-
-
 export default function signUp() {
   initFirebase();
   const router = useRouter()
