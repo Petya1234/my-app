@@ -1,15 +1,12 @@
 'use client'
 import styles from './styles.module.css'
-import { Metadata } from "next";
 import Link from "next/link";
-import { useRouter } from 'next/navigation';
 import { FormEventHandler } from 'react';
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import {initFirebase} from '@/app/firebase/firebaseApp'
 
 export default function signUp() {
   initFirebase();
-  const router = useRouter()
 
   const handleSubmit: FormEventHandler<HTMLFormElement> = async (event) => {
     event.preventDefault();
