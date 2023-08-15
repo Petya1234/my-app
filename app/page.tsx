@@ -21,7 +21,6 @@ function handleClick2() {
 }
 export default function Home() {
   const app =initFirebase()
-  console.log(app)
   return (
     <div>
       <Header />

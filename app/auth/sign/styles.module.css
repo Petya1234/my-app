@@ -12,7 +12,7 @@
     justify-content: center;
     margin-top: 40px;
     width: 500px;
-    height: 500px;
+    height: 600px;
     padding-top: 20px;
     box-sizing: border-box;
     background: linear-gradient(45deg, #383838, #929292, #ffffff);
@@ -78,6 +78,15 @@
     display: inline-block;
     outline: none;
     font-size: 30px;
+}
+.errorAlert {
+    display: none;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 15px;
+    background-color: red;
+    border: solid 5px transparent; /* !important */
+    border-radius: 6px;
 }
   @keyframes gradient {
 	0% {
