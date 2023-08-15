@@ -6,7 +6,7 @@ import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import { initFirebase } from "@/app/firebase/firebaseApp";
 import { useRouter } from 'next/navigation'
 
-export default function signUp() {
+export default function Signup() {
   initFirebase();
   const router = useRouter()
 

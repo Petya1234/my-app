@@ -7,9 +7,9 @@ import { initFirebase } from "@/app/firebase/firebaseApp";
 import { useRouter } from "next/navigation";
 
 
-export default function signIn() {
+export default function Signin() {
     initFirebase();
-    const router = useRouter();
+    const Router = useRouter();
 
     const handleSubmit: FormEventHandler<HTMLFormElement> = async (event) => {
     event.preventDefault();
@@ -22,7 +22,7 @@ export default function signIn() {
   .then((userCredential) => {
     // Signed in 
     const user = userCredential.user;
-    router.push('/')
+    Router.push('/')
   })
   .catch((error) => {
     const errorMessage = error.message;
