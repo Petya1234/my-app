@@ -1,15 +1,11 @@
 "use client";
 import styles from "./styles.module.css";
-import { Metadata } from "next";
 import Link from "next/link";
 import { FormEventHandler } from "react";
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import { initFirebase } from "@/app/firebase/firebaseApp";
 import { useRouter } from "next/navigation";
 
-export const metadata: Metadata = {
-  title: "Sign in",
-};
 
 export default function signIn() {
     initFirebase();
