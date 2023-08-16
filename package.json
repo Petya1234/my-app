@@ -19,9 +19,12 @@
     "firebase": "^10.1.0",
     "next": "13.4.12",
     "next-auth": "^4.23.0",
+    "nodemailer": "^6.9.4",
     "prisma": "^5.1.1",
     "react": "18.2.0",
     "react-dom": "^18.2.0",
+    "react-modal": "^3.16.1",
+    "swr": "^2.2.1",
     "typescript": "5.1.6"
   }
 }

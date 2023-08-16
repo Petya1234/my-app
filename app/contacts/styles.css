@@ -112,6 +112,71 @@ ul {
     height: 200px;
 }
 
-.secondary-content {
-    height: 1000px;
+.secondary-content {    
+    justify-content: center;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 50px;
 }
+
+i {
+    border: solid rgb(255, 255, 255);
+    border-width: 0 15px 15px 0;
+    display: inline-block;
+    padding: 20px;
+}.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.text-field {
+    display: flex;
+    margin-bottom: 1rem;
+    justify-content: center;
+    margin-top: 40px;
+    align-items: center;
+    height: 200px;
+
+  }
+  .text-field_another {
+    display: flex;
+    margin-bottom: 1rem;
+    justify-content: center;
+    margin-top: 40px;
+    align-items: center;
+    background-color: #ffffff00;
+    height: 200px;
+
+  }
+  /* стили для input */
+  .text-field__input {
+    display: block;
+    width: 80%;
+    height: 80px;
+    padding: 0.375rem 0.75rem;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #ffffff;
+    background-color: #6e6e6e;
+    background-clip: padding-box;
+    border: none;
+    border-radius: 0.25rem;
+    outline: none;
+  }
+  
+  .button1 {
+    display: flex;
+    margin-right: 15px;
+    color: #000000;
+    background-color: white;
+    font-size: 20px;
+    width: 150px;
+    height: 80px;
+    box-sizing: border-box;
+    background-clip: padding-box; 
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+  }
