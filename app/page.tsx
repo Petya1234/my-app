@@ -4,7 +4,6 @@ import imgSrc from "@/public/photos/1photo.jpg";
 import "./main-content-styles.css";
 import { Header } from "@/components/header";
 import { EmblaCarousel } from "@/components/EmblaCarousel";
-import { initFirebase } from "./firebase/firebaseApp";
 
 function handleClick() {
   window.scrollTo({
@@ -20,7 +19,6 @@ function handleClick2() {
   });
 }
 export default function Home() {
-  const app =initFirebase()
   return (
     <div>
       <Header />
