@@ -1,8 +1,8 @@
-import { Navigation } from "./Navigation";
-import Link from "next/link";
 import "./styles.css";
-import { getAuth, onAuthStateChanged } from "firebase/auth";
-import { initFirebase } from "@/app/firebase/firebaseApp";
+import Link from "next/link";
+import { Navigation } from "./Navigation";
+import { signOut, useSession } from "next-auth/react";
+
 
 const navItems = [
     { label: "Главная", href: "/" },
@@ -10,13 +10,21 @@ const navItems = [
 ];
 
 const Header = () => {
-    initFirebase();
+    const session = useSession();
+
     return (<header>
         <div className="navbar">
             <Navigation navLinks={navItems} />
-            <Link href={"/auth/sign"}>
+            {session?.data && (<Link href={"/"}>
+                <button className="nav-button" onClick = {() => signOut()}>Выйти</button>
+            </Link> )} 
+            :
+            {(<Link href={"/auth/sign"}>
                 <button className="nav-button">Войти</button>
-            </Link>
+            </Link>)}
+
+
+            
         </div>
     </header>
     )

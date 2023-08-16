@@ -1,5 +1,5 @@
+'use client'
 import "./styles.css";
-import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import imgTelegram from "@/public/photos/telegram-photo.jpg";
@@ -10,9 +10,6 @@ import ImgInst from "@/public/photos/instagram-photo.jpg";
 import ImgInstQr from "@/public/photos/instagram-photo-qr.png";
 import { Header } from "@/components/header";
 
-export const metadata: Metadata = {
-  title: "Contacts",
-};
 
 export default function Contacts() {
   return (
