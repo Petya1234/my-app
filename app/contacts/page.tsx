@@ -10,18 +10,23 @@ import ImgInst from "@/public/photos/instagram-photo.jpg";
 import ImgInstQr from "@/public/photos/instagram-photo-qr.png";
 import { Header } from "@/components/header";
 import { useSession } from "next-auth/react";
-
-
+import { FormEventHandler, useState } from "react";
+import { sendText } from "@/app/lib/api";
 
 export default function Contacts() {
-
   const session = useSession();
+  const [inputOne, setInputOne] = useState('');
+  let data = { email: "", name: "", text: "" };
 
-  
-  async function handleClick1() {
+  function submitClick() {
+    data.email = session.data?.user?.email as string;
+    data.name = session.data?.user?.name as string;
+    data.text = inputOne;
+    const status = sendText(data);
+}
 
-  }
-  
+
+
   return (
     <div>
       <Header />
@@ -106,11 +111,16 @@ export default function Contacts() {
         </p>
         {session?.data ? (
           <div className="text-field">
-            <input
-              className="text-field__input"
-              name="send"
-              defaultValue="Можешь написать мне что-нибудь напрямую"
-            ></input><button className="button1" onClick={handleClick1}>Отправить</button>
+              <input
+                id = '1'
+                type="send"
+                className="text-field__input"
+                name="send"
+                placeholder="Можешь написать мне что-нибудь напрямую(это придёт мне на почту)"
+                onChange={(event) => setInputOne(event.target.value)}
+                required
+              ></input>
+              <button className="button1" onClick = {submitClick}>Отправить</button>
           </div>
         ) : (
           <div className="text-field_another">
@@ -118,8 +128,11 @@ export default function Contacts() {
               className="text-field__input"
               name="send"
               readOnly
-              value="Можешь написать мне что-нибудь напрямую"
-            ></input><button className="button1" disabled onClick={handleClick1}>Отправить</button>
+              placeholder="Можешь написать мне что-нибудь напрямую(это придёт мне на почту)"
+            ></input>
+            <button className="button1" disabled>
+              Отправить
+            </button>
           </div>
         )}
       </div>
