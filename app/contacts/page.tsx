@@ -61,7 +61,7 @@ export default function Contacts() {
             <div className="box">
               <ul>
                 <div className="img-box-vk">
-                  <Link target="_blank" href="https://t.me/qwrttqr">
+                  <Link target="_blank" href="https://vk.com/qwrttq">
                     <Image
                       className="vk-link"
                       width={150}
@@ -80,7 +80,7 @@ export default function Contacts() {
             <div className="box">
               <ul>
                 <div className="img-box-inst">
-                  <Link target="_blank" href="https://t.me/qwrttqr">
+                  <Link target="_blank" href="https://instagram.com/qwrttqr?igshid=MjEwN2IyYWYwYw==">
                     <Image
                       className="inst-link"
                       width={150}
@@ -113,18 +113,17 @@ export default function Contacts() {
           <div className="text-field">
               <input
                 id = '1'
-                type="send"
                 className="text-field__input"
-                name="send"
                 placeholder="Можешь написать мне что-нибудь напрямую(это придёт мне на почту)"
                 onChange={(event) => setInputOne(event.target.value)}
                 required
               ></input>
-              <button className="button1" onClick = {submitClick}>Отправить</button>
+              <button type="button" className="button1" onClick = {submitClick}>Отправить</button>
           </div>
         ) : (
           <div className="text-field_another">
             <input
+              disabled
               className="text-field__input"
               name="send"
               readOnly
