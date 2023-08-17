@@ -181,12 +181,6 @@ i {
     border-radius: 5px;
     align-items: center;
     justify-content: center;
-    -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
-  -o-transition: all 0.2s ease;
-  }
-  .button1:hover {
-    background-color: #6e6e6e;
   }
   .textForm {
     margin: 0 auto;
