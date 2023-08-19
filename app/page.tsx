@@ -2,8 +2,8 @@
 import "./main-content-styles.css";
 import Image from "next/image";
 import imgSrc from "@/public/photos/1photo.jpg";
-import { Header } from "@/components/Header"
 import { EmblaCarousel } from "@/components/EmblaCarousel";
+import {Header} from '@/components/header'
 
 function handleClick() {
   window.scrollTo({
