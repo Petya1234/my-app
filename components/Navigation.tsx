@@ -21,7 +21,7 @@ const Navigation = ({ navLinks }: Props) => {
     {navLinks.map((link) => {
         const isActive = pathName === link.href
         return (
-            <div className='links'><Link key ={link.label} href ={link.href} className={isActive ? 'active': ''}>{link.label}</Link></div>
+            <div key ={link.label} className='links'><Link key ={link.label} href ={link.href} className={isActive ? 'active': ''}>{link.label}</Link></div>
         )
     })}</>;
 }
