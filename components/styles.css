@@ -21,11 +21,8 @@
   display: flex;
   float: left;
 }
-.mainClass {
-  
-}
 
-.navbar > a {
+.navbar > .links >  a {
   margin: 15px;
   font-size: 30px;
   color: white;
@@ -75,9 +72,8 @@
   width: 100%;
 }
 @media(min-width: 800px) {
-  .navbar > a:hover {
-    color: #e0f5f5;
-    text-decoration: underline;
+  .navbar > .links > a:hover {
+    color: rgb(177, 253, 253);
   }
   .nav_button:hover {
     border-radius: 0;

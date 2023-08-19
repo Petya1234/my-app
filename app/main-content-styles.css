@@ -21,6 +21,7 @@
   top:200px;
 }
 .welcome_content > h1 {
+  font-size: 40px;
   position: absolute;
   left: 1000px;
   top: 300px;

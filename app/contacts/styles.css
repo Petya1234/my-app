@@ -147,7 +147,7 @@ i {
     display: block;
     float: left;
     width: 80%;
-    height: 80px;
+    height: 70px;
     padding: 0.375rem 0.75rem;
     font-family: inherit;
     font-size: 1rem;
@@ -169,7 +169,7 @@ i {
     background-color: white;
     font-size: 20px;
     width: 150px;
-    height: 80px;
+    height: 70px;
     box-sizing: border-box;
     background-clip: padding-box; 
     border-radius: 5px;

@@ -3,7 +3,7 @@ import './styles.css'
 const Footer = () => {
     return (
         <footer className='footer'>
-            Created by &copy; Petya
+            <p>Created by &copy; Petya</p>
         </footer>
     )
 }
