@@ -1,5 +1,5 @@
 "use client";
-import styles from "./main-content-styles.module.css";
+import "./main-content-styles.css";
 import Image from "next/image";
 import imgSrc from "@/public/photos/1photo.jpg";
 import { Header } from "@/components/Header"
@@ -22,25 +22,25 @@ export default function Home() {
   return (
     <div>
       <Header/>
-      <div className={styles.welcome_content}>
-        <Image className={styles.main_img} src={imgSrc} alt="" />
+      <div className='welcome_content'>
+        <Image className='main_img' src={imgSrc} alt="" />
         <h1>
           Добро пожаловать на сайт о Пете Алексеенко <br />
         </h1>
-        <button className={styles.button} onClick={handleClick}>
+        <button className='button' onClick={handleClick}>
           Подробности
         </button>
       </div>
-      <div className={styles.main_info}>
-        <div className={styles.main_text}>Вы знаете как меня зовут, но если бы этого было достаточно этот сайт не
+      <div className='main_info'>
+        <div className='main_text'> <p>Вы знаете как меня зовут, но если бы этого было достаточно этот сайт не
         был бы создан. <br />
         Перейду сразу к делу, на этом сайте вы можете связаться со мной,
         подписаться на мои соцсети, посмотреть фоточки и может что-нибудь ещё,
         если я придумаю что-то. <br />А пока предлагаю вам посмотреть небольшую
-        подборку фоточек</div>
-        <button className={styles.button2} onClick={handleClick2}>К фото</button>
+        подборку фоточек</p></div>
+        <button className='button2' onClick={handleClick2}>К фото</button>
       </div>
-      <div className={styles.photo_carousel}>
+      <div className='photo_carousel'>
         <EmblaCarousel />
       </div>
     </div>

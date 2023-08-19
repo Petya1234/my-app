@@ -52,9 +52,7 @@
   -moz-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
 }
-.button:hover {
-  width: 420px;
-}
+
 .container {
   background: linear-gradient(90deg, #110f0f, #313131, #1b1b1b, #020202);
 	background-size: 400% 400%;
@@ -84,7 +82,14 @@
   -moz-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
 }
-.button2:hover {
-  width: 420px;
-}
 
+
+@media(min-width: 800px) {
+  .button:hover {
+    width: 420px;
+  }
+
+  .button2:hover {
+    width: 420px;
+  }
+}

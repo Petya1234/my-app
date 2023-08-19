@@ -28,14 +28,11 @@
 .navbar > a {
   margin: 15px;
   font-size: 30px;
-  color: inherit;
+  color: white;
   text-decoration: none;
 }
 
-.navbar > a:hover {
-  color: #e0f5f5;
-  text-decoration: underline;
-}
+
 
 .navbar {
   width: 100%;
@@ -66,10 +63,7 @@
   -o-transition: all 0.15s ease;
   transition: all 0.15s ease;
 }
-.nav_button:hover {
-  border-radius: 0;
-  width: 250px;
-}
+
 
 
 
@@ -79,4 +73,14 @@
   background-color: black;
   padding-top: 10px;
   width: 100%;
+}
+@media(min-width: 800px) {
+  .navbar > a:hover {
+    color: #e0f5f5;
+    text-decoration: underline;
+  }
+  .nav_button:hover {
+    border-radius: 0;
+    width: 250px;
+  }
 }

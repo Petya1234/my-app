@@ -29,15 +29,15 @@ body {
   display: grid;
   grid-template-rows: auto 1fr auto;
 }
-
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+p {
+  color:white
 }
-
-
+h1 {
+  color:white;
+}
+a {
+  color:white;
+}
 
 @keyframes gradient {
 	0% {

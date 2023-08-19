@@ -1,4 +1,4 @@
-import styles from './styles.module.css'
+import'./styles.css'
 import Link from "next/link";
 import { Navigation } from "./Navigation";
 import { signOut, useSession } from "next-auth/react";
@@ -12,18 +12,17 @@ const navItems = [
 const Header = () => {
     const session = useSession();
     console.log(session)
-    return session.data? (<div className={styles.mainCLass}>
-        <div className={styles.navbar}>
+    return session.data? (
+        <div className='navbar'>
             <Navigation navLinks={navItems} />
             {(<Link href={"#"}>
-                <button className={styles.nav_button} onClick={() => signOut()}>Выйти</button>
+                <button className='nav_button' onClick={() => signOut()}>Выйти</button>
             </Link>)}
-            </div>
             </div>) : (
-        <div className={styles.navbar}>
+        <div className='navbar'>
             <Navigation navLinks={navItems} />
             {(<Link href={"/api/auth/signin"}>
-                <button className={styles.nav_button}>Войти</button>
+                <button className='nav_button'>Войти</button>
             </Link>)}
             </div>)
 };

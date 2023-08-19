@@ -1,6 +1,7 @@
 "use client";
 import "./styles.css";
 import Link from "next/link";
+import Script from 'next/script'
 import Image from "next/image";
 import imgTelegram from "@/public/photos/telegram-photo.jpg";
 import imgTelegramQr from "@/public/photos/telegram-qr-photo.png";
@@ -22,7 +23,10 @@ export default function Contacts() {
     data.email = session.data?.user?.email as string;
     data.name = session.data?.user?.name as string;
     data.text = inputOne;
-    const status = sendText(data);
+    if (data.text) {
+      const status = sendText(data);
+    }
+    
 }
 
 
@@ -105,7 +109,8 @@ export default function Contacts() {
         </ul>
       </div>
       <div className="secondary-content">
-        Этот элемент доступен только авторизованным пользователям
+        <p>Этот элемент доступен только авторизованным пользователям</p>
+        
         <p>
           <i className="arrow down"></i>
         </p>
@@ -118,7 +123,7 @@ export default function Contacts() {
                 onChange={(event) => setInputOne(event.target.value)}
                 required
               ></input>
-              <button type="button" className="button1" onClick = {submitClick}>Отправить</button>
+              <button id='2' className="button1" onClick = {submitClick}>Отправить</button>
           </div>
         ) : (
           <div className="text-field_another">

@@ -1,8 +1,8 @@
-import styles from './styles.module.css'
+import './styles.css'
 
 const Footer = () => {
     return (
-        <footer className={styles.footer}>
+        <footer className='footer'>
             Created by &copy; Petya
         </footer>
     )

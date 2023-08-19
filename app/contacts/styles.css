@@ -81,10 +81,7 @@ ul {
     -o-transition: all 0.3s ease;;
     transition: all 0.3s ease;
 }
-.vk-link:hover {
-    width: 200px;
-    height: 200px;
-}
+
 
 .img-box-inst {
     display: flex;
@@ -107,10 +104,7 @@ ul {
     -o-transition: all 0.3s ease;;
     transition: all 0.3s ease;
 }
-.inst-link:hover {
-    width: 200px;
-    height: 200px;
-}
+
 
 .secondary-content {    
     justify-content: center;
@@ -148,7 +142,7 @@ i {
     height: 200px;
 
   }
-  /* стили для input */
+
   .text-field__input {
     display: block;
     float: left;
@@ -182,7 +176,25 @@ i {
     align-items: center;
     justify-content: center;
   }
-  .textForm {
-    margin: 0 auto;
-    display: block;
+
+  .text-box {
+    margin-left: 44vw;
+   margin-top: 42vh;
+}
+
+   
+  @media(min-width: 800px) {
+    .tg-link:hover {
+        width: 200px;
+        height: 200px;
+    }
+    .vk-link:hover {
+        width: 200px;
+        height: 200px;
+    }
+    .inst-link:hover {
+        width: 200px;
+        height: 200px;
+    }
+
   }
