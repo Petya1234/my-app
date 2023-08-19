@@ -1,5 +1,5 @@
-
 import "@/app/globals.css";
+import styles from './main-content-styles.module.css'
 import type { Metadata } from "next";
 
 import { Footer } from "@/components/footer";
@@ -19,7 +19,7 @@ export default function RootLayout({
       
       <body>
         <Providers>
-        <main className="container" >{children}</main>
+        <main className={styles.container} >{children}</main>
         <Footer />
         </Providers>
       </body>

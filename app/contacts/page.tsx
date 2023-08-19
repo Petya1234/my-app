@@ -8,9 +8,9 @@ import ImgVk from "@/public/photos/vk-photo.jpg";
 import ImgVkQr from "@/public/photos/vk-qr-photo.png";
 import ImgInst from "@/public/photos/instagram-photo.jpg";
 import ImgInstQr from "@/public/photos/instagram-photo-qr.png";
-import { Header } from "@/components/header";
+import { Header } from "@/components/Header";
 import { useSession } from "next-auth/react";
-import { FormEventHandler, useState } from "react";
+import { useState } from "react";
 import { sendText } from "@/app/lib/api";
 
 export default function Contacts() {

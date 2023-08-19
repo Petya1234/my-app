@@ -1,4 +1,4 @@
-.main-img {
+.main_img {
   width: 500px;
   height: 500px;
   border-radius: 50%;
@@ -8,24 +8,24 @@
   border: 3px solid #ffffff;
 }
 
-.welcome-content {
+.welcome_content {
   height: 1000px;
 }
-.main-info {
+.main_info {
   text-align: left;
   height: 1000px;
   font-size: 40px;
 }
-.main-text {
+.main_text {
   position:relative;
   top:200px;
 }
-.welcome-content > h1 {
+.welcome_content > h1 {
   position: absolute;
   left: 1000px;
   top: 300px;
 }
-.photo-carousel {
+.photo_carousel {
   display: flex;
   justify-content: center;
 }
@@ -55,7 +55,14 @@
 .button:hover {
   width: 420px;
 }
+.container {
+  background: linear-gradient(90deg, #110f0f, #313131, #1b1b1b, #020202);
+	background-size: 400% 400%;
+	animation: gradient 20s ease infinite;
+	transform: translate3d(0, 0, 0);
+  width: 100%;
 
+}
 
 .button2 {
   position: relative;

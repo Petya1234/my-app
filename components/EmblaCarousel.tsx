@@ -1,5 +1,4 @@
-import './styles.css'
-import Link from 'next/link'
+import styles from './styles.module.css'
 import Image from 'next/image'
 import React from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
@@ -13,18 +12,18 @@ export const EmblaCarousel = () => {
   const [emblaRef] = useEmblaCarousel()
 
   return (
-    <div className="embla" ref={emblaRef}>
-      <div className="embla__container">
-        <div className="embla__slide"><ul><Image height={1000} width={1100} src={imgCarousel1} alt=''></Image>
+    <div className={styles.embla} ref={emblaRef}>
+      <div className={styles.embla__container}>
+        <div className={styles.embla__slide}><ul><Image height={1000} width={1100} src={imgCarousel1} alt=''></Image>
         <p>Мои новые кроссики</p></ul></div>
-        <div className="embla__slide"><ul><Image height={1000} width={1100} src={imgCarousel2} alt=''></Image>
+        <div className={styles.embla__slide}><ul><Image height={1000} width={1100} src={imgCarousel2} alt=''></Image>
         <p>Лагерь</p></ul></div>
-        <div className="embla__slide"><ul><Image height={1000} width={1100} src={imgCarousel3} alt=''></Image>
+        <div className={styles.embla__slide}><ul><Image height={1000} width={1100} src={imgCarousel3} alt=''></Image>
         <p>Любимый зал</p></ul></div>
-        <div className="embla__slide"><ul><Image height={1000} width={1100} src={imgCarousel5} alt=''></Image>
+        <div className={styles.embla__slide}><ul><Image height={1000} width={1100} src={imgCarousel5} alt=''></Image>
         <p>Друзья(здесь не все)</p></ul></div>
-        <div className="embla__slide"><ul><Image height={1000} width={1100} src={imgCarousel4} alt=''></Image>
-        <p className='cat-paragraph'>Кошка???</p></ul></div>
+        <div className={styles.embla__slide}><ul><Image height={1000} width={1100} src={imgCarousel4} alt=''></Image>
+        <p className={styles.cat_paragraph}>Кошка???</p></ul></div>
       </div>
     </div>
   )
