@@ -19,9 +19,6 @@ export default function RootLayout({
   return (
     
     <html lang="en">
-      <Head>
-          <link rel="shortcut icon" href='@/public/static/favicon.ico'/>
-      </Head>
       <body>
         <Providers>
         <main className='container' >{children}</main>
