@@ -5,6 +5,7 @@ import imgSrc from "@/public/photos/1photo.jpg";
 import { EmblaCarousel } from "@/components/EmblaCarousel";
 import {Header} from '@/components/header'
 
+
 function handleClick() {
   window.scrollTo({
     top: 1000,

@@ -1,12 +1,14 @@
 import "@/app/globals.css";
 import './main-content-styles.css'
-import type { Metadata } from "next";
-
+import Head from "next/head";
 import { Footer } from "@/components/footer";
 import { Providers } from "@/components/Providers";
+import type { Metadata } from "next";
+
+
 
 export const metadata: Metadata = {
-  title: 'Petya main'
+  title: 'Petya'
 };
 
 export default function RootLayout({
@@ -15,8 +17,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
+    
     <html lang="en">
-      
+      <Head>
+          <link rel="shortcut icon" href='@/public/static/favicon.ico'/>
+      </Head>
       <body>
         <Providers>
         <main className='container' >{children}</main>

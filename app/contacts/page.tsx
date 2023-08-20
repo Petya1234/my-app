@@ -1,7 +1,6 @@
 "use client";
 import "./styles.css";
 import Link from "next/link";
-import Script from 'next/script'
 import Image from "next/image";
 import imgTelegram from "@/public/photos/telegram-photo.jpg";
 import imgTelegramQr from "@/public/photos/telegram-qr-photo.png";
@@ -11,20 +10,25 @@ import ImgInst from "@/public/photos/instagram-photo.jpg";
 import ImgInstQr from "@/public/photos/instagram-photo-qr.png";
 import { Header } from "@/components/header";
 import { useSession } from "next-auth/react";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { sendText } from "@/app/lib/api";
+import { Metadata } from "next";
+
 
 export default function Contacts() {
   const session = useSession();
   const [inputOne, setInputOne] = useState('');
+  const ref = useRef<any>()
   let data = { email: "", name: "", text: "" };
 
-  function submitClick() {
+  function submitClick(e: any) {
     data.email = session.data?.user?.email as string;
     data.name = session.data?.user?.name as string;
     data.text = inputOne;
     if (data.text) {
       const status = sendText(data);
+      e.preventDefault()
+      ref.current.value = ''
     }
     
 }
@@ -117,7 +121,7 @@ export default function Contacts() {
         {session?.data ? (
           <div className="text-field">
               <input
-                id = '1'
+                ref = {ref}
                 className="text-field__input"
                 placeholder="Можешь написать мне что-нибудь напрямую(это придёт мне на почту)"
                 onChange={(event) => setInputOne(event.target.value)}
@@ -143,3 +147,4 @@ export default function Contacts() {
     </div>
   );
 }
+
