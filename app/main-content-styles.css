@@ -25,7 +25,7 @@
 }
 
 .welcome_content {
-  height: 1000px;
+  height: 1200px;
 }
 .main_info {
   text-align: left;
@@ -33,7 +33,6 @@
   font-size: 40px;
 }
 .main_text {
-  position:relative;
   top:200px;
 }
 .welcome_content > h1 {
@@ -76,9 +75,6 @@
 }
 
 .button2 {
-  position: relative;
-  left: 1330px;
-  top: 180px;
   display: flex;
   margin-right: 15px;
   color: #000000;

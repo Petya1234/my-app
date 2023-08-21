@@ -15,7 +15,7 @@ function handleClick() {
 
 function handleClick2() {
   window.scrollTo({
-    top: 2190,
+    top: 2220,
     behavior: "smooth",
   });
 }
@@ -32,7 +32,6 @@ export default function Home() {
           Подробности
         </button></div>
         
-        
       </div>
       <div className='main_info'>
         <div className='main_text'> <p>Вы знаете как меня зовут, но если бы этого было достаточно этот сайт не
@@ -41,7 +40,7 @@ export default function Home() {
         подписаться на мои соцсети, посмотреть фоточки и может что-нибудь ещё,
         если я придумаю что-то. <br />А пока предлагаю вам посмотреть небольшую
         подборку фоточек</p></div>
-        <button className='button2' onClick={handleClick2}>К фото</button>
+        <div><button className='button2' onClick={handleClick2}>К фото</button></div>
       </div>
       <div className='photo_carousel'>
         <EmblaCarousel />
