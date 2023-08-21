@@ -24,13 +24,15 @@ export default function Home() {
     <div>
       <Header/>
       <div className='welcome_content'>
-        <Image className='main_img' src={imgSrc} alt="" />
-        <h1>
+        <div className="image_block"><Image className='main_img' src={imgSrc} alt="" /></div>
+        <div className="welcome_block"> <div className="welcome_inscr"></div><h1>
           Добро пожаловать на сайт о Пете Алексеенко <br />
         </h1>
         <button className='button' onClick={handleClick}>
           Подробности
-        </button>
+        </button></div>
+        
+        
       </div>
       <div className='main_info'>
         <div className='main_text'> <p>Вы знаете как меня зовут, но если бы этого было достаточно этот сайт не
