@@ -25,10 +25,10 @@ export default function Home() {
       <Header/>
       <div className='welcome_content'>
         <div className="image_block"><Image className='main_img' src={imgSrc} alt="" /></div>
-        <div className="welcome_block"> <div className="welcome_inscr"></div><h1>
+        <div className="welcome_block"> <div className="welcome_inscr"><h1>
           Добро пожаловать на сайт о Пете Алексеенко <br />
         </h1>
-        <button className='button' onClick={handleClick}>
+        </div><button className='button' onClick={handleClick}>
           Подробности
         </button></div>
         

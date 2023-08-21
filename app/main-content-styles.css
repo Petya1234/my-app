@@ -21,7 +21,14 @@
   width: calc(100% - 500px);
 }
 .welcome_inscr {
-  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: center;
+  height: 300px;
+}
+.welcome_inscr > h1 {
+  text-align: center;
 }
 
 .welcome_content {
