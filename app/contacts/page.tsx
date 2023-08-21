@@ -12,13 +12,11 @@ import { Header } from "@/components/header";
 import { useSession } from "next-auth/react";
 import { useRef, useState } from "react";
 import { sendText } from "@/app/lib/api";
-import { Metadata } from "next";
-
 
 export default function Contacts() {
   const session = useSession();
-  const [inputOne, setInputOne] = useState('');
-  const ref = useRef<any>()
+  const [inputOne, setInputOne] = useState("");
+  const ref = useRef<any>();
   let data = { email: "", name: "", text: "" };
 
   function submitClick(e: any) {
@@ -27,13 +25,10 @@ export default function Contacts() {
     data.text = inputOne;
     if (data.text) {
       const status = sendText(data);
-      e.preventDefault()
-      ref.current.value = ''
+      e.preventDefault();
+      ref.current.value = "";
     }
-    
-}
-
-
+  }
 
   return (
     <div>
@@ -88,7 +83,10 @@ export default function Contacts() {
             <div className="box">
               <ul>
                 <div className="img-box-inst">
-                  <Link target="_blank" href="https://instagram.com/qwrttqr?igshid=MjEwN2IyYWYwYw==">
+                  <Link
+                    target="_blank"
+                    href="https://instagram.com/qwrttqr?igshid=MjEwN2IyYWYwYw=="
+                  >
                     <Image
                       className="inst-link"
                       width={150}
@@ -114,20 +112,22 @@ export default function Contacts() {
       </div>
       <div className="secondary-content">
         <p>Этот элемент доступен только авторизованным пользователям</p>
-        
+
         <p>
           <i className="arrow down"></i>
         </p>
         {session?.data ? (
           <div className="text-field">
-              <input
-                ref = {ref}
-                className="text-field__input"
-                placeholder="Можешь написать мне что-нибудь напрямую(это придёт мне на почту)"
-                onChange={(event) => setInputOne(event.target.value)}
-                required
-              ></input>
-              <button id='2' className="button1" onClick = {submitClick}>Отправить</button>
+            <input
+              ref={ref}
+              className="text-field__input"
+              placeholder="Можешь написать мне что-нибудь напрямую(это придёт мне на почту)"
+              onChange={(event) => setInputOne(event.target.value)}
+              required
+            ></input>
+            <button id="2" className="button1" onClick={submitClick}>
+              Отправить
+            </button>
           </div>
         ) : (
           <div className="text-field_another">
@@ -147,4 +147,3 @@ export default function Contacts() {
     </div>
   );
 }
-

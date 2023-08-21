@@ -1,6 +1,6 @@
 .links > a.active {
-    color: rgb(177, 253, 253);
-  }
+  color: rgb(177, 253, 253);
+}
 .links {
   display: inline-block;
   padding-top: 7px;

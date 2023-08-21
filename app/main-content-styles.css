@@ -40,7 +40,7 @@
   font-size: 40px;
 }
 .main_text {
-  top:200px;
+  top: 200px;
 }
 .welcome_content > h1 {
   font-size: 40px;
@@ -53,8 +53,6 @@
   justify-content: center;
 }
 
-
-
 .button {
   margin-right: 15px;
   color: #000000;
@@ -63,7 +61,7 @@
   width: 300px;
   height: 50px;
   box-sizing: border-box;
-  background-clip: padding-box; 
+  background-clip: padding-box;
   border-radius: 5px;
   align-items: center;
   justify-content: center;
@@ -74,11 +72,10 @@
 
 .container {
   background: linear-gradient(90deg, #110f0f, #313131, #1b1b1b, #020202);
-	background-size: 400% 400%;
-	animation: gradient 20s ease infinite;
-	transform: translate3d(0, 0, 0);
+  background-size: 400% 400%;
+  animation: gradient 20s ease infinite;
+  transform: translate3d(0, 0, 0);
   width: 100%;
-
 }
 
 .button2 {
@@ -90,7 +87,7 @@
   width: 300px;
   height: 50px;
   box-sizing: border-box;
-  background-clip: padding-box; 
+  background-clip: padding-box;
   border-radius: 5px;
   align-items: center;
   justify-content: center;
@@ -99,8 +96,7 @@
   -o-transition: all 0.4s ease;
 }
 
-
-@media(min-width: 800px) {
+@media (min-width: 800px) {
   .button:hover {
     width: 420px;
   }
