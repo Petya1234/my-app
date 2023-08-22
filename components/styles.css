@@ -60,11 +60,14 @@
 }
 
 .footer {
-  margin-bottom: -1px;
+
   height: 50px;
   background-color: black;
-  padding-top: 10px;
   width: 100%;
+}
+
+.footer > p  {
+  margin-top: 15px;
 }
 @media (min-width: 800px) {
   .navbar > .links > a:hover {
@@ -73,5 +76,25 @@
   .nav_button:hover {
     border-radius: 0;
     width: 250px;
+  }
+}
+
+@media (max-width: 800px) {
+
+  .nav_button {
+    display: flex;
+    margin-right: 15px;
+    color: #000000;
+    background-color: white;
+    font-size: 40px;
+    width: 150px;
+    height: 50px;
+    float: right;
+    box-sizing: border-box;
+    background-clip: padding-box;
+    border: solid 5px transparent;
+    border-radius: 1em;
+    align-items: center;
+    justify-content: center;
   }
 }
